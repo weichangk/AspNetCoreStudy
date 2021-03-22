@@ -1,0 +1,14 @@
+﻿@{ ViewData["Title"] = "Privacy Policy"; }
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+<img src="~/images/MyImage.jpg" class="img" alt="My image" />
+<!-- ~/ 指向 Web 根目录 wwwroot 需要使用静态中间件app.UseStaticFiles();才能访问-->
+<p>
+    Red Rose requires <br />
+    webBuilder.UseStartup&lt;StartupRose&gt;();
+</p>
+
+<img src="~/StaticFiles/images/red-rose.jpg" class="img" alt="A red rose" />
+<!--访问Web 根目录 wwwroot外的文件-->
