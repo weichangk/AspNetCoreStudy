@@ -37,9 +37,9 @@ namespace EnvironmentsSample
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                   // webBuilder.UseStartup<First.Startup>();
-                   // webBuilder.UseStartup<Inject.Startup>();
-                    webBuilder.UseStartup<MethodConventions.Startup>();
+                    webBuilder.UseStartup<First.Startup>();
+                    // webBuilder.UseStartup<Inject.Startup>();
+                    //webBuilder.UseStartup<MethodConventions.Startup>();
 
                 });
     }

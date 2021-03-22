@@ -1,12 +1,14 @@
 ﻿{
   "iisSettings": {
-    "windowsAuthentication": false, 
-    "anonymousAuthentication": true, 
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
     "iisExpress": {
       "applicationUrl": "http://localhost:64645",
       "sslPort": 44366
     }
   },
+
+  //IIS Express：在 Visual Studio 中启动应用时使用的默认配置文件。 由于 "commandName" 键的值为 "IISExpress"，因此 IISExpress 是 Web 服务器
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
@@ -15,6 +17,10 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
+
+    //可以将启动配置文件设置为此项目或所包含的其他任何配置文件。 选择项目名称会启动 Kestrel Web 服务器。
+    //EnvironmentsSample：配置文件名称是项目名称。 当使用 dotnet run 启动应用时，默认使用此配置文件。 
+    //由于 "commandName" 键的值为 "Project"，因此启动的是 Kestrel Web 服务器。
     "EnvironmentsSample": {
       "commandName": "Project",
       "launchBrowser": true,

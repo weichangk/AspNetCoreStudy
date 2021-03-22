@@ -11,7 +11,10 @@ using System.Reflection;
 
 namespace ClassConventions
 {
-#region snippet
+    #region snippet
+    /// <summary>
+    /// Startup¿‡‘º∂®
+    /// </summary>
     public class StartupDevelopment
     {
         public StartupDevelopment(IConfiguration configuration)

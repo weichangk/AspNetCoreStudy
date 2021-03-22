@@ -9,6 +9,9 @@ using System.Runtime.CompilerServices;
 namespace MethodConventions
 {
     #region snippet
+    /// <summary>
+    /// ConfigureServices和Configure方法约定
+    /// </summary>
     public class Startup
     {
         private void StartupConfigureServices(IServiceCollection services)
