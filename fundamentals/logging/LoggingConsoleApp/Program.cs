@@ -19,7 +19,12 @@ class Program
                 .AddEventLog();
         });
         ILogger logger = loggerFactory.CreateLogger<Program>();
-        logger.LogInformation("Example log message");
+        logger.LogTrace("Example LogTrace message");
+        logger.LogDebug("Example LogDebug message");
+        logger.LogInformation("Example LogInformation message");
+        logger.LogWarning("Example LogWarning message");
+        logger.LogError("Example LogError message");
+        logger.LogCritical("Example LogCritical message");
     }
 }
 #endregion

@@ -17,7 +17,7 @@ namespace MyMain.Controllers
 
         public HomeController(ILogger<HomeController> logger)
         {
-            _logger = logger;
+            _logger = logger;//控制器构造函数注入ILogger
         }
 
         public IActionResult Index()
@@ -32,7 +32,9 @@ namespace MyMain.Controllers
             var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
             ViewData["Message"] = $"ASPNETCORE_ENVIRONMENT = {env}";
             var routeInfo = ControllerContext.ToCtxString();
-            _logger.LogWarning(2000,"Test  {x}", routeInfo);
+
+            //使用ILogger
+            _logger.LogWarning(2000,"Test  {x} {y}", routeInfo, routeInfo + ".....");
             _logger.LogInformation(1100, "Test  {x}", routeInfo);
 
             return View();

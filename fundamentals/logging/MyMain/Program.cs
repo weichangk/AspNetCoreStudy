@@ -138,7 +138,7 @@ public class Program
             {
                 logging.AddEventLog(eventLogSettings =>
                 {
-                    eventLogSettings.SourceName = "MyLogs"; 
+                    eventLogSettings.SourceName = "MyLogs";
                 });
             })
             .ConfigureWebHostDefaults(webBuilder =>
